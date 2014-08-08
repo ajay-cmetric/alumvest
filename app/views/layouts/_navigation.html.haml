@@ -1,0 +1,30 @@
+-# navigation styled for Bootstrap 3.0
+%div.navbar.navbar-default
+  .container
+    .navbar.navbar-default
+      .container
+        .navbar-brand.col-md-3.col-sm-3.col-xs-6
+          %a{href: "index.html"}
+            %img.img-responsive{src: "/assets/logo.jpg"}/
+        .col-sm-3.col-md-3.col-xs-6.pull-right.mob_margin
+          %form.navbar-form{role: "search"}
+            .input-group
+              %input#srch-term.form-control{name: "srch-term", placeholder: "Search", type: "text"}/
+              .input-group-btn
+                %button.btn.btn-default{type: "submit"}
+                  %i.glyphicon.glyphicon-search
+        .menu_bg_part.pull-right.menu_toggle.mob_menu
+          %button.navbar-toggle{"data-target" => ".nav_header_part", "data-toggle" => "collapse"}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          .collapse.navbar-collapse.nav_header_part
+            %ul.nav.navbar-nav
+              %li
+                %a{href: "#"} Investor
+              %li
+                %a{href: "#"} Intreprenuer
+              %li
+                %a.blue{href: "#"} Resister
+              %li.border-none
+                %a.blue{href: "#"} Login

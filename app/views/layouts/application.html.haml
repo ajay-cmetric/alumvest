@@ -1,0 +1,14 @@
+!!!
+%html
+  %head
+    %meta{content: "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
+    %title Welcome to AlumVest
+    = javascript_include_tag "application"
+    = stylesheet_link_tag "application"
+  %body
+    %div
+      = render 'layouts/navigation'
+      = render 'layouts/messages'
+      = yield
+      = render 'layouts/footer'
